@@ -1,14 +1,14 @@
 var playlist = {
-  prince: "raspberry beret",
-  oreskaband: "jitensya"
-};
-
-function updatePlaylist(playlist, artist, song ){
-playlist[artist] = song
-return playlist
+  oreskaband: 'jitensya',
+  deathcab: 'cath...'
 }
 
-function removeFromPlaylist(playlist, artist){
-  delete playlist[artist]
+function updatePlaylist(playlist, artistName, songTitle){
+  playlist[artistName] = songTitle
+  return playlist
+}
+
+function removeFromPlaylist(playlist, artistName){
+  delete playlist[artistName]
   return playlist
 }
